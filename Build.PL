@@ -10,9 +10,13 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
         'Debian::ModuleList' => 0,
+        'DBI' => 0,
+        'DBD::SQLite' => 0
     },
     requires => {
         'Debian::ModuleList' => 0,
+        'DBI' => 0,
+        'DBD::SQLite' => 0
     },
     add_to_cleanup      => [ 'ORDB-DebianModules-Generator-*' ],
     create_makefile_pl => 'traditional',

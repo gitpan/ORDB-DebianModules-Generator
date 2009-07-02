@@ -5,6 +5,8 @@ WriteMakefile
           'NAME' => 'ORDB::DebianModules::Generator',
           'VERSION_FROM' => 'lib/ORDB/DebianModules/Generator.pm',
           'PREREQ_PM' => {
+                           'DBD::SQLite' => 0,
+                           'DBI' => 0,
                            'Debian::ModuleList' => 0,
                            'Test::More' => 0
                          },
